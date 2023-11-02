@@ -37,15 +37,13 @@ export default function Home() {
   })
 
   return (
-    <Flex gap={96} flexDirection="column">
+    <Flex gap={64} flexDirection="column">
       <Flex flexDirection="column" gap={96} className="main" id="home">
         <Flex gap={24} className={styles['home']} justifyContent="center" alignItems="center">
           <Flex>
             <Flex flexDirection="column" gap={24}>
               <h1 className={styles['giant-text']}>
-                Trouver Facilement
-                Votre Orientation Pour
-                Mieux Briller en Société.
+                AOE-SUP.
               </h1>
               <Text className={styles['text']}>
                 L’orientation après-bac représente pourtant une étape très importante : elle permet 
@@ -165,6 +163,7 @@ export default function Home() {
       >
         <Quote />
       </Flex>
+
       <Flex  id="contact" justifyContent="center" alignItems="center" flexWrap="wrap" gap={24}>
         <Block>
           <Image className={styles['brand']} 
@@ -257,6 +256,34 @@ export default function Home() {
           </Flex>
         </form>
         
+      </Flex>
+
+      <Flex justifyContent="center" alignItems="center" flexWrap="wrap" className={classes('main', styles['grid'])}>
+        <Image src="/1.jpg"
+          width={150}
+          height={150}
+          alt="Image"
+        />
+        <Image src="/2.jpg"
+          width={150}
+          height={150}
+          alt="Image"
+        />
+        <Image src="/3.jpg"
+          width={150}
+          height={150}
+          alt="Image"
+        />
+        <Image src="/4.jpg"
+          width={150}
+          height={150}
+          alt="Image"
+        />
+        <Image src="/5.jpg"
+          width={150}
+          height={150}
+          alt="Image"
+        />
       </Flex>
 
       <Block className="main">

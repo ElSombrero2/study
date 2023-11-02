@@ -4,6 +4,7 @@ import { Title } from '@/ui/components/Typography/Title/Title'
 import { useFormat } from '@/ui/core/format'
 import styles from './Navbar.module.scss'
 import { Link } from '../../ui/components/Typography/Link/Link'
+import Image from 'next/image'
 
 export const Navbar = () => {
     
@@ -15,7 +16,11 @@ export const Navbar = () => {
                 <Flex>
                     <Block>
                         <Title heading="h5">
-                            Logo
+                            <Image src="/logo.jpg"
+                                width={50}
+                                height={50}
+                                alt='0'
+                            />
                         </Title>
                     </Block>
                 </Flex>
