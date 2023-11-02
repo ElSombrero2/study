@@ -1,0 +1,27 @@
+@import '../colors/index.scss';
+
+.text-black, .text-black * { color: $black; }
+.text-white, .text-white * { color: $white; }
+.text-grey, .text-grey * { color: $grey; }
+.text-dark, .text-dark * { color: $dark; }
+
+.text-default, .text-default * { color: $default; }
+.text-primary, .text-primary * { color: $primary; }
+.text-secondary, .text-secondary * { color: $secondary; }
+.text-success, .text-success * { color: $success; }
+.text-danger, .text-danger * { color: $danger; }
+.text-warning, .text-warning * { color: $warning; }
+
+.text-default-dark, .text-default-dark * { color: $default-dark; }
+.text-primary-dark, .text-primary-dark * { color: $primary-dark; }
+.text-secondary-dark, .text-secondary-dark * { color: $secondary-dark; }
+.text-success-dark, .text-success-dark * { color: $success-dark; }
+.text-danger-dark, .text-danger-dark * { color: $danger-dark; }
+.text-warning-dark, .text-warning-dark * { color: $warning-dark; }
+
+.text-default-light, .text-default-light * { color: $default-light; }
+.text-primary-light, .text-primary-light * { color: $primary-light; }
+.text-secondary-light, .text-secondary-light * { color: $secondary-light; }
+.text-success-light, .text-success-light * { color: $success-light; }
+.text-danger-light, .text-danger-light * { color: $danger-light; }
+.text-warning-light, .text-warning-light * { color: $warning-light; }

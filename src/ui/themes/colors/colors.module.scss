@@ -1,0 +1,28 @@
+@import './index.scss';
+
+:export {
+    black: $black;
+    white: $white;
+    grey: $grey;
+    dark: $dark;
+    primary: $primary;
+    secondary: $secondary;
+    success: $success;
+    danger: $danger;
+    warning: $warning;
+    default: $default;
+
+    default-dark: $default-dark;
+    primary-dark: $primary-dark;
+    secondary-dark: $secondary-dark;
+    success-dark: $success-dark;
+    danger-dark: $danger-dark;
+    warning-dark: $warning-dark;
+
+    default-light: $default-light;
+    primary-light: $primary-light;
+    secondary-light: $secondary-light;
+    success-light: $success-light;
+    danger-light: $danger-light;
+    warning-light: $warning-light;
+}

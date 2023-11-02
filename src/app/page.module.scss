@@ -1,0 +1,73 @@
+@import '../ui/themes/index.scss';
+
+.home{
+    .giant-text {
+        font-size: 60px;
+        max-width: 650px;
+    }
+
+    .text { max-width: 500px; }
+}
+
+.clients{
+    max-width: 750px;
+    .client-image{
+        width: 120px;
+        height: auto;
+        filter: grayscale(1);
+        transition: filter 200ms;
+        &:hover{ filter: grayscale(0); }
+    }
+}
+
+.staff{
+    padding: 64px;
+    background: linear-gradient(to right, #80D8E2, #1F4CA7);
+    border-radius: 10px;
+    * { color: $white; }
+}
+
+.quote-section{
+    * {color: white !important; }
+    background: linear-gradient(to left, #80D8E2, #1F4CA7);
+    padding-bottom: 64px;
+    padding-top: 64px;
+}
+
+.block{
+    padding: 64px;
+    background: linear-gradient(to right, #1F4CA7, #80D8E2);
+    border-radius: 24px;
+    * { color: $white; }
+}
+.form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    .form{
+        max-width: 550px;
+        .form-group{
+            width: 100%;
+            input, select{
+                padding: 15px;
+                border-radius: 5px;
+                border: 1px #{$grey}99 solid;
+                width: 100%;
+            }
+        }    
+    }
+}
+
+.brand{
+    width: 100%;
+    height: auto;
+    max-width: 760px;
+}
+
+.footer{
+    border-top: 1px solid #{$grey}66;
+    padding-top: 36px;
+    margin-bottom: -20px;
+}
+

@@ -1,0 +1,20 @@
+@import '../../../ui/themes/index.scss';
+
+@keyframes scroll-left {
+    from{ transform: translateX(100vw); }
+    to{ transform: translateX(-100%); }
+}
+
+@keyframes scroll-right {
+    from{ transform: translateX(-100%); }
+    to{ transform: translateX(100vw); }
+}
+
+.wrapper{
+    overflow: hidden;
+    .marquee{
+        &.marquee-left{ animation: scroll-left infinite linear; }
+        &.marquee-right{ animation: scroll-right infinite linear; }
+        *{ width: max-content; }
+    }
+}

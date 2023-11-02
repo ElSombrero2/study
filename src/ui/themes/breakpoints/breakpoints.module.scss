@@ -1,0 +1,8 @@
+@import './breakpoints.scss';
+
+:export  {
+    screen-xs: $screen-xs;
+    screen-sm: $screen-sm;
+    screen-md: $screen-md;
+    screen-xl: $screen-xl;
+}

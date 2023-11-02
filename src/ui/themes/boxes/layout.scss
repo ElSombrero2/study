@@ -1,0 +1,122 @@
+@import '../breakpoints/breakpoints.scss';
+
+.w-100{ width: 100%; }
+
+.d-flex{ display: flex; }
+
+.d-block{ display: block; }
+
+.d-inline-block{ display: inline-block; }
+
+.d-none{ display: none; }
+
+.container{ padding: 20px 30px; }
+
+.row{ width: 100%; }
+
+.row > * {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 1 0 0%;
+    width: auto;
+}
+
+@for $i from 1 through 12{
+    .column-#{$i} {
+        flex: 0 0 auto;
+        width: calc(100% / (12 / $i));
+    }
+}
+
+@media screen and (max-width: $screen-xl) {
+    .column-xl-auto{
+        flex: 1 0 0%;
+        width: auto;
+    }
+
+    @for $i from 1 through 12{
+        .column-xl-#{$i} {
+            flex: 0 0 auto;
+            width: calc(100% / (12 / $i));
+        }
+    }
+
+    .d-flex-xl{ display: flex; }
+
+    .d-block-xl{ display: block; }
+
+    .d-inline-block-xl{ display: inline-block; }
+
+    .d-none-xl{ display: none; }
+}
+
+@media screen and (max-width: $screen-md) {
+    .column-md-auto{
+        flex: 1 0 0%;
+        width: auto;
+    }
+
+    @for $i from 1 through 12{
+        .column-md-#{$i} {
+            flex: 0 0 auto;
+            width: calc(100% / (12 / $i));
+        }
+    }
+
+    .d-flex-md{ display: flex; }
+
+    .d-block-md{ display: block; }
+
+    .d-inline-block-md{ display: inline-block; }
+
+    .d-none-md{ display: none; }
+}
+
+@media screen and (max-width: $screen-sm) {
+    .column-sm-auto{
+        flex: 1 0 0%;
+        width: auto;
+    }
+
+    @for $i from 1 through 12{
+        .column-sm-#{$i} {
+            flex: 0 0 auto;
+            width: calc(100% / (12 / $i));
+        }
+    }
+
+    .d-flex-sm{ display: flex; }
+
+    .d-block-sm{ display: block; }
+
+    .d-inline-block-sm{ display: inline-block; }
+
+    .d-none-sm{ display: none; }
+}
+
+@media screen and (max-width: $screen-xs) {
+    .column-xs-auto{
+        flex: 1 0 0%;
+        width: auto;
+    }
+
+    @for $i from 1 through 12{
+        .column-xs-#{$i} {
+            flex: 0 0 auto;
+            width: calc(100% / (12 / $i));
+        }
+    }
+
+    .d-flex-xs{ display: flex; }
+
+    .d-block-xs{ display: block; }
+
+    .d-inline-block-xs{ display: inline-block; }
+
+    .d-none-xs{ display: none; }
+}

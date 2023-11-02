@@ -1,0 +1,64 @@
+
+@import '../colors/index.scss';
+
+.border-black{ border-color: $black; }
+.border-white{ border-color: $white; }
+.border-grey{ border-color: $grey; }
+.border-dark{ border-color: $dark; }
+
+.border-default{ border-color: $default; }
+.border-primary{ border-color: $primary; }
+.border-secondary{ border-color: $secondary; }
+.border-success{ border-color: $success; }
+.border-danger{ border-color: $danger; }
+.border-warning{ border-color: $warning; }
+
+.border-default-dark{ border-color: $default-dark; }
+.border-primary-dark{ border-color: $primary-dark; }
+.border-secondary-dark{ border-color: $secondary-dark; }
+.border-success-dark{ border-color: $success-dark; }
+.border-danger-dark{ border-color: $danger-dark; }
+.border-warning-dark{ border-color: $warning-dark; }
+
+.border-default-light{ border-color: $default-light; }
+.border-primary-light{ border-color: $primary-light; }
+.border-secondary-light{ border-color: $secondary-light; }
+.border-success-light{ border-color: $success-light; }
+.border-danger-light{ border-color: $danger-light; }
+.border-warning-dlightark{ border-color: $warning-light; }
+
+.bg-black{ background: $black; }
+.bg-white{ background: $white; }
+.bg-grey{ background: $grey; }
+.bg-dark{ background: $dark; }
+
+.bg-default { background: $default; }
+.bg-primary { background: $primary; }
+.bg-secondary{ background: $secondary; }
+.bg-success{ background: $success; }
+.bg-danger{ background: $danger; }
+.bg-warning{ background: $warning; }
+
+.bg-default-dark { background: $default-dark; }
+.bg-primary-dark { background: $primary-dark; }
+.bg-secondary-dark{ background: $secondary-dark; }
+.bg-success-dark{ background: $success-dark; }
+.bg-danger-dark{ background: $danger-dark; }
+.bg-warning-dark{ background: $warning-dark; }
+
+.bg-default-light { background: $default-light; }
+.bg-primary-light { background: $primary-light; }
+.bg-secondary-light{ background: $secondary-light; }
+.bg-success-light{ background: $success-light; }
+.bg-danger-light{ background: $danger-light; }
+.bg-warning-light{ background: $warning-light; }
+
+.shadow-0{ box-shadow: 0.0px 0.0px 0.0px hsla(0, 0%, 45%, 0.5); }
+
+.shadow-1{ box-shadow: 0.8px 1.6px 1.6px hsl(0, 0%, 45%, 0.48); }
+
+.shadow-2{ box-shadow: 1.6px 3.2px 3.2px hsl(0, 0%, 45%, 0.45); }
+
+.shadow-3{ box-shadow: 2.4px 4.8px 4.8px hsl(0, 0%, 45%, 0.43); }
+
+.shadow-4{ box-shadow: 3.2px 6.4px 6.4px hsl(0, 0%, 45%, 0.40); }

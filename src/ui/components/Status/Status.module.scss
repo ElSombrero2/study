@@ -1,0 +1,214 @@
+@import '../../themes/index.scss';
+
+.status{
+    border-radius: 50%;
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 50%;
+    }
+
+    &.status-default{
+        @keyframes default-animation {
+            from{ 
+                background-color: $default;
+                transform: scale(0);
+            }
+            to{ 
+                background-color: #{$default}55;
+                transform: scale(1);
+            }
+        }
+        background-color: $default;
+        &.animated::before{animation: default-animation 1000ms infinite cubic-bezier(.29,.46,0,1.03);}
+        &::before{
+            background-color: #{$default}55;
+            border: 1px solid $default;
+        }
+    }
+
+    &.status-primary{
+        @keyframes primary-animation {
+            from{ 
+                background-color: $primary;
+                transform: scale(0);
+            }
+            to{ 
+                background-color: #{$primary}55;
+                transform: scale(1);
+            }
+        }
+        background-color: $primary;
+        &.animated::before{animation: primary-animation 1000ms infinite cubic-bezier(.29,.46,0,1.03);}
+        &::before{
+            background-color: #{$primary}55;
+            border: 1px solid $primary;
+        }
+    }
+
+    &.status-secondary{
+        @keyframes secondary-animation {
+            from{ 
+                background-color: $secondary;
+                transform: scale(0);
+            }
+            to{ 
+                background-color: #{$secondary}55;
+                transform: scale(1);
+            }
+        }
+        background-color: $secondary;
+        &.animated::before{animation: secondary-animation 1000ms infinite cubic-bezier(.29,.46,0,1.03);}
+        &::before{
+            background-color: #{$secondary}55;
+            border: 1px solid $secondary;
+        }
+    }
+
+    &.status-success{
+        @keyframes success-animation {
+            from{ 
+                background-color: $success;
+                transform: scale(0);
+            }
+            to{ 
+                background-color: #{$success}55;
+                transform: scale(1);
+            }
+        }
+        background-color: $success;
+        &.animated::before{animation: success-animation 1000ms infinite cubic-bezier(.29,.46,0,1.03);}
+        &::before{
+            background-color: #{$success}55;
+            border: 1px solid $success;
+        }
+    }
+
+    &.status-danger{
+        @keyframes danger-animation {
+            from{ 
+                background-color: $danger;
+                transform: scale(0);
+            }
+            to{ 
+                background-color: #{$danger}55;
+                transform: scale(1);
+            }
+        }
+        background-color: $danger;
+        &.animated::before{animation: danger-animation 1000ms infinite cubic-bezier(.29,.46,0,1.03);}
+        &::before{
+            background-color: #{$danger}55;
+            border: 1px solid $danger;
+        }
+    }
+
+    &.status-warning{
+        @keyframes warning-animation {
+            from{ 
+                background-color: $warning;
+                transform: scale(0);
+            }
+            to{ 
+                background-color: #{$warning}55;
+                transform: scale(1);
+            }
+        }
+        background-color: $warning;
+        &.animated::before{animation: warning-animation 1000ms infinite cubic-bezier(.29,.46,0,1.03);}
+        &::before{
+            background-color: #{$warning}55;
+            border: 1px solid $warning;
+        }
+    }
+
+    &.status-dark{
+        @keyframes dark-animation {
+            from{ 
+                background-color: $dark;
+                transform: scale(0);
+            }
+            to{ 
+                background-color: #{$dark}55;
+                transform: scale(1);
+            }
+        }
+        background-color: $dark;
+        &.animated::before{animation: dark-animation 1000ms infinite cubic-bezier(.29,.46,0,1.03);}
+        &::before{
+            background-color: #{$dark}55;
+            border: 1px solid $dark;
+        }
+    }
+
+    &.status-giant{
+        width: calc($giant / 2);
+        height: calc($giant / 2);
+        margin: calc($giant / 2);
+        &::before{
+            width: $giant;
+            height: $giant;
+        }
+    }
+
+    &.status-huge{
+        width: calc($huge / 2);
+        height: calc($huge / 2);
+        margin: calc($huge / 2);
+        &::before{
+            width: $huge;
+            height: $huge;
+        }
+    }
+
+    &.status-extra-large{
+        width: calc($extra-large / 2);
+        height: calc($extra-large / 2);
+        margin:  calc($extra-large / 2);
+        &::before{
+            width: $extra-large;
+            height: $extra-large;
+        }
+    }
+
+    &.status-large{
+        width: calc($large / 2);
+        height: calc($large / 2);
+        margin: calc($large / 2);
+        &::before{
+            width: $large;
+            height: $large;
+        }
+    }
+
+    &.status-medium{
+        width: calc($medium / 2);
+        height: calc($medium / 2);
+        margin: calc($medium / 2);
+        &::before{
+            width: $medium;
+            height: $medium;
+        }
+    }
+
+    &.status-small{
+        width: calc($small / 2);
+        height: calc($small / 2);
+        margin: calc($small / 2);
+        &::before{
+            width: $small;
+            height: $small;
+        }
+    }
+
+    &.status-tiny{
+        width: calc($tiny / 2);
+        height: calc($tiny / 2);
+        margin: calc($tiny / 2);
+        &::before{
+            width: $tiny;
+            height: $tiny;
+        }
+    }
+}

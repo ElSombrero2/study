@@ -1,0 +1,46 @@
+@import '../Typography.module.scss';
+
+.base{ 
+    text-decoration: none;
+    cursor: pointer; 
+    &.decorated:hover{ text-decoration: underline; }
+    width: fit-content
+}
+
+.link-default{ 
+    @extend .text-default, .base;
+    &:active{ @extend .text-default-dark; }
+}
+
+.link-primary{ 
+    @extend .text-primary, .base;
+    &:active{ @extend .text-primary-dark; }
+}
+
+.link-secondary{ 
+    @extend .text-secondary, .base;
+    &:active{ @extend .text-secondary-dark; }
+
+}
+
+.link-danger{ 
+    @extend .text-danger, .base;
+    &:active{ @extend .text-danger-dark; }
+
+}
+
+.link-success{ 
+    @extend .text-success, .base;
+    &:active{ @extend .text-success-dark; }
+}
+
+.link-warning{ 
+    @extend .text-warning, .base;
+    &:active{ @extend .text-warning-dark; }
+
+}
+
+.link-dark{ 
+    @extend .text-black, .base;
+    &:active{ @extend .text-black; }
+}

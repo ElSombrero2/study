@@ -1,0 +1,229 @@
+@import '../../../themes/index.scss';
+
+.base{
+    padding: 12px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: 200ms all;
+    background-color: transparent;
+    border: 1px solid transparent; 
+}
+
+.button-contained{
+
+    @extend .base;
+
+    &.button-default{ 
+        @extend .bg-default, .text-secondary;
+        &:active:not(:disabled){ @extend .bg-default-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-primary{ 
+        @extend .bg-primary, .text-white;
+        &:active:not(:disabled){ @extend .bg-primary-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-secondary{ 
+        @extend .bg-secondary, .text-white;
+        &:active:not(:disabled){ @extend .bg-secondary-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-danger{ 
+        @extend .bg-danger, .text-white;
+        &:active:not(:disabled){ @extend .bg-danger-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-success{ 
+        @extend .bg-success, .text-white;
+        &:active:not(:disabled){ @extend .bg-success-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-warning{ 
+        @extend .bg-warning, .text-white;
+        &:active:not(:disabled){ @extend .bg-warning-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-dark{ 
+        @extend .bg-dark, .text-white;
+        &:active:not(:disabled){ @extend .bg-black; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+}
+
+.button-outline{
+    @extend .base;
+
+    &.button-default{ 
+        @extend .text-default, .border-default;
+        &:hover:not(:disabled){ @extend .bg-default, .text-secondary; }
+        &:active:not(:disabled){ @extend .bg-default-dark, .text-white; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-primary{ 
+        @extend .border-primary, .text-primary;
+        &:hover:not(:disabled){ @extend .bg-primary, .text-white; }
+        &:active:not(:disabled){ @extend .bg-primary-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-secondary{ 
+        @extend .border-secondary, .text-secondary;
+        &:hover:not(:disabled){  @extend .bg-secondary, .text-white; }
+        &:active:not(:disabled){ @extend .bg-secondary-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-danger{ 
+        @extend .border-danger, .text-danger;
+        &:hover:not(:disabled){  @extend .bg-danger, .text-white; }
+        &:active:not(:disabled){ @extend .bg-danger-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-success{ 
+        @extend .border-success, .text-success;
+        &:hover:not(:disabled){  @extend .bg-success, .text-white; }
+        &:active:not(:disabled){ @extend .bg-success-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-warning{ 
+        @extend .border-warning, .text-warning;
+        &:hover:not(:disabled){  @extend .bg-warning, .text-white; }
+        &:active:not(:disabled){ @extend .bg-warning-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-dark{ 
+        @extend .border-dark, .text-dark;
+        &:hover:not(:disabled){  @extend .bg-dark, .text-white; }
+        &:active:not(:disabled){ @extend .bg-black; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+}
+
+.button-link{
+    @extend .base;
+
+    &.button-default{ 
+        @extend .text-default;
+        &:hover:not(:disabled){ text-decoration: underline; }
+        &:active:not(:disabled){ @extend .text-default-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-primary{ 
+        @extend .text-primary;
+        &:hover:not(:disabled){ text-decoration: underline; }
+        &:active:not(:disabled){ @extend .text-primary-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-secondary{ 
+        @extend .text-secondary;
+        &:hover:not(:disabled){ text-decoration: underline; }
+        &:active:not(:disabled){ @extend .text-secondary-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-danger{ 
+        @extend .text-danger;
+        &:hover:not(:disabled){ text-decoration: underline; }
+        &:active:not(:disabled){ @extend .text-danger-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-success{ 
+        @extend .text-success;
+        &:hover:not(:disabled){ text-decoration: underline; }
+        &:active:not(:disabled){ @extend .text-success-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-warning{ 
+        @extend .text-warning;
+        &:hover:not(:disabled){ text-decoration: underline; }
+        &:active:not(:disabled){ @extend .text-warning-dark; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+
+    &.button-dark{ 
+        @extend .text-black;
+        &:hover:not(:disabled){ text-decoration: underline; }
+        &:active:not(:disabled){ @extend .text-black; }
+        &:disabled{ 
+            opacity: 0.3;
+            cursor: default; 
+        }
+    }
+}
