@@ -6,12 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start:prod": "pm2 startOrRestart ecosystem.config.js --env prod"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",
     "lottie-react": "^2.4.0",
     "next": "13.5.6",
+    "pm2": "^5.3.0",
     "react": "^18",
     "react-dom": "^18"
   },
